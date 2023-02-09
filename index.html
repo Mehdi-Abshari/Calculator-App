@@ -7,11 +7,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 </head>
 
 <body>
+    <main>
+        <!-- Container -->
+        <div class="container">
+            <!-- Account box -->
+            <div class="account-box">
+                <div class="answer-page">
+                    <textarea id="answer-input"></textarea>
+                </div>
+            </div>
+            <!-- Buttons box -->
+            <div class="buttons-box">
+                <div class="left-buttons">
+                    <!-- first row -->
+                    <div class="row">
+                        <span class="buttons">CE</span>
+                        <span class="buttons">C</span>
+                        <span class="buttons"><i class="fa-solid fa-delete-left"></i></span>
+                        <span class="buttons"><i class="fa-solid fa-divide"></i></span>
+                    </div>
+                    <!-- secend row -->
+                    <div class="row">
+                        <span class="buttons">7</span>
+                        <span class="buttons">8</span>
+                        <span class="buttons">9</span>
+                        <span class="buttons"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <!-- third row -->
+                    <div class="row">
+                        <span class="buttons">4</span>
+                        <span class="buttons">5</span>
+                        <span class="buttons">6</span>
+                        <span class="buttons"><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <!-- forth row -->
+                    <div class="row">
+                        <span class="buttons">1</span>
+                        <span class="buttons">2</span>
+                        <span class="buttons">3</span>
+                        <span class="buttons"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <!-- fifth row -->
+                    <div class="row">
+                        <span class="buttons">.</span>
+                        <span class="buttons">0</span>
+                        <span class="buttons"><i class="fa-solid fa-equals"></i></span>
+                    </div>
+                </div>
+                <div class="right-buttons">
+                    <!-- first row -->
+                    <div class="row">
+                        <span class="buttons">Sin</span>
+                        <span class="buttons">Cos</span>
+                    </div>
+                    <!-- secend row -->
+                    <div class="row">
+                        <span class="buttons">Tan</span>
+                        <span class="buttons">Cot</span>
+                    </div>
+                    <!-- third row -->
+                    <div class="row">
+                        <span class="buttons">Log</span>
+                        <span class="buttons"><i class="fa-solid fa-percent"></i></span>
+                    </div>
+                    <!-- forth row -->
+                    <div class="row">
+                        <span class="buttons">Rad</span>
+                        <span class="buttons"><i class="fa-solid fa-square-root-variable"></i></span>
+                    </div>
+                    <!-- fifth row -->
+                    <div class="row">
+                        <span class="buttons">(</span>
+                        <span class="buttons">)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-
+    <!-- JS link -->
     <script src="script.js"></script>
 </body>
 
