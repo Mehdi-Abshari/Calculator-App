@@ -1,0 +1,72 @@
+/* All Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #d4e4f3;
+  font-family: arial;
+}
+
+/* Container */
+.container {
+  border-radius: 11px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.account-box {
+  background-color: #505c68;
+  padding: 25px;
+}
+#answer-input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  caret-color: transparent;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+  margin-block: 10px;
+  user-select: none;
+  resize: none;
+  cursor: default;
+}
+
+.buttons-box,
+.row,
+.buttons {
+  display: flex;
+}
+.buttons {
+  border: 1px solid #6a798c;
+  color: #fff;
+  background-color: #5b6a7d;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 65px;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+.math-operators {
+  background-color: #374353;
+}
+.math-operators:nth-child(2) {
+  color: tomato;
+}
+#equal {
+  width: 200px;
+  background-image: linear-gradient(to right, #ff4066, #fff16a);
+}
+.advanced-calculation {
+  width: 75px;
+  background-color: #333a42;
+}
