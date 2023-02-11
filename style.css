@@ -20,11 +20,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* Account box */
 .account-box {
   background-color: #505c68;
   padding: 25px;
 }
-#answer-input {
+#answerInput {
   outline: none;
   border: none;
   background-color: transparent;
@@ -38,7 +39,7 @@ body {
   resize: none;
   cursor: default;
 }
-
+/* Button style */
 .buttons-box,
 .row,
 .buttons {

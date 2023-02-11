@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/App-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 </head>
 
@@ -17,7 +18,7 @@
             <!-- Account box -->
             <div class="account-box">
                 <div class="answer-page">
-                    <textarea id="answer-input"></textarea>
+                    <textarea id="answerInput"></textarea>
                 </div>
             </div>
             <!-- Buttons box -->
@@ -25,9 +26,10 @@
                 <div class="left-buttons">
                     <!-- first row -->
                     <div class="row">
-                        <span class="math-operators buttons">CE</span>
-                        <span class="math-operators buttons">C</span>
-                        <span class="math-operators buttons"><i class="fa-solid fa-delete-left"></i></span>
+                        <span class="delete-all math-operators buttons">CE</span>
+                        <span class="delete-all math-operators buttons">C</span>
+                        <span id="delete-last" class="math-operators buttons"><i
+                                class="fa-solid fa-delete-left"></i></span>
                         <span class="math-operators buttons"><i class="fa-solid fa-divide"></i></span>
                     </div>
                     <!-- secend row -->
@@ -77,7 +79,8 @@
                     <!-- forth row -->
                     <div class="row">
                         <span class="advanced-calculation buttons">Rad</span>
-                        <span class="advanced-calculation buttons"><i class="fa-solid fa-square-root-variable"></i></span>
+                        <span class="advanced-calculation buttons"><i
+                                class="fa-solid fa-square-root-variable"></i></span>
                     </div>
                     <!-- fifth row -->
                     <div class="row">
