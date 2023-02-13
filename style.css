@@ -23,7 +23,7 @@ body {
 /* Account box */
 .account-box {
   background-color: #505c68;
-  padding: 25px;
+  /* padding: 25px; */
 }
 #answerInput {
   outline: none;
@@ -70,4 +70,15 @@ body {
 .advanced-calculation {
   width: 75px;
   background-color: #333a42;
+}
+@media only screen and (max-width: 545px) {
+  .buttons {
+    width: 55px;
+  }
+  #equal {
+    width: 110px;
+  }
+  #answerInput {
+    font-size: 27px;
+  }
 }
