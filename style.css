@@ -23,62 +23,71 @@ body {
 /* Account box */
 .account-box {
   background-color: #505c68;
-  /* padding: 25px; */
 }
-#answerInput {
+#screen {
   outline: none;
   border: none;
-  background-color: transparent;
-  caret-color: transparent;
-  font-size: 30px;
-  font-weight: 600;
-  color: #fff;
-  text-align: left;
-  margin-block: 10px;
   user-select: none;
   resize: none;
   cursor: default;
+  background-color: transparent;
+  caret-color: transparent;
+
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  padding: 32px 0 0 20px;
+  width: 100%;
+}
+#screen::placeholder {
+  color: #fff;
 }
 /* Button style */
 .buttons-box,
 .row,
-.buttons {
+.btn {
   display: flex;
 }
-.buttons {
+span {
   border: 1px solid #6a798c;
   color: #fff;
   background-color: #5b6a7d;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100px;
   height: 65px;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   user-select: none;
+  transition: all 0.2s;
 }
-.math-operators {
+span:hover {
+  opacity: 0.75;
+}
+.right-buttons span {
+  background-color: #323b42;
+}
+.left-buttons .row:nth-child(1) span,
+.left-buttons .row:nth-child(2) span:nth-child(4),
+.left-buttons .row:nth-child(3) span:nth-child(4),
+.left-buttons .row:nth-child(4) span:nth-child(4),
+.left-buttons .row:nth-child(5) span:nth-child(1){
   background-color: #374353;
 }
-.math-operators:nth-child(2) {
-  color: tomato;
-}
-#equal {
+#eval {
   width: 200px;
   background-image: linear-gradient(to right, #ff4066, #fff16a);
 }
-.advanced-calculation {
-  width: 75px;
-  background-color: #333a42;
-}
 @media only screen and (max-width: 545px) {
-  .buttons {
+  span {
     width: 55px;
+    font-size: 16px;
   }
-  #equal {
+  #eval {
     width: 110px;
   }
-  #answerInput {
+  #screen {
     font-size: 27px;
   }
 }

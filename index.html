@@ -18,7 +18,7 @@
             <!-- Account box -->
             <div class="account-box">
                 <div class="answer-page">
-                    <textarea id="answerInput"></textarea>
+                    <textarea id="screen" placeholder="0"></textarea>
                 </div>
             </div>
             <!-- Buttons box -->
@@ -26,66 +26,64 @@
                 <div class="left-buttons">
                     <!-- first row -->
                     <div class="row">
-                        <span class="delete-all math-operators buttons">CE</span>
-                        <span class="delete-all math-operators buttons">C</span>
-                        <span id="delete-last" class="math-operators buttons"><i
-                                class="fa-solid fa-delete-left"></i></span>
-                        <span class="math-operators buttons" data-value="/"><i class="fa-solid fa-divide"></i></span>
+                        <span id="ce" onclick="screen.value=''">CE</span>
+                        <span id="ac" onclick="screen.value=''">AC</span>
+                        <span onclick="backspc()"><i class="fa-solid fa-delete-left"></i></span>
+                        <span class="btn">÷</span>
                     </div>
                     <!-- secend row -->
                     <div class="row">
-                        <span class="numbers buttons">7</span>
-                        <span class="numbers buttons">8</span>
-                        <span class="numbers buttons">9</span>
-                        <span class="math-operators buttons" data-value="*"><i class="fa-solid fa-xmark"></i></span>
+                        <span class="btn">7</span>
+                        <span class="btn">8</span>
+                        <span class="btn">9</span>
+                        <span class="btn">×</span>
                     </div>
                     <!-- third row -->
                     <div class="row">
-                        <span class="numbers buttons">4</span>
-                        <span class="numbers buttons">5</span>
-                        <span class="numbers buttons">6</span>
-                        <span class="math-operators buttons" data-value="-"><i class="fa-solid fa-minus"></i></span>
+                        <span class="btn">4</span>
+                        <span class="btn">5</span>
+                        <span class="btn">6</span>
+                        <span class="btn">-</span>
                     </div>
                     <!-- forth row -->
                     <div class="row">
-                        <span class="numbers buttons">1</span>
-                        <span class="numbers buttons">2</span>
-                        <span class="numbers buttons">3</span>
-                        <span class="math-operators buttons" data-value="+"><i class="fa-solid fa-plus"></i></span>
+                        <span class="btn">1</span>
+                        <span class="btn">2</span>
+                        <span class="btn">3</span>
+                        <span class="btn">+</span>
                     </div>
                     <!-- fifth row -->
                     <div class="row">
-                        <span class="math-operators buttons number-separators">.</span>
-                        <span class="buttons">0</span>
-                        <span id="equal" class="math-operators buttons"><i class="fa-solid fa-equals"></i></span>
+                        <span class="btn">.</span>
+                        <span class="btn">0</span>
+                        <span id="eval" onclick="screen.value = eval(screen.value)">=</span>
                     </div>
                 </div>
                 <div class="right-buttons">
                     <!-- first row -->
                     <div class="row">
-                        <span class="advanced-calculation buttons">Sin</span>
-                        <span class="advanced-calculation buttons">Cos</span>
+                        <span onclick="sin()">Sin</span>
+                        <span onclick="cos()">Cos</span>
                     </div>
                     <!-- secend row -->
                     <div class="row">
-                        <span class="advanced-calculation buttons">Tan</span>
-                        <span class="advanced-calculation buttons">Cot</span>
+                        <span onclick="tan()">Tan</span>
+                        <span onclick="cot()">Cot</span>
                     </div>
                     <!-- third row -->
                     <div class="row">
-                        <span class="advanced-calculation buttons">Log</span>
-                        <span class="advanced-calculation buttons"><i class="fa-solid fa-percent"></i></span>
+                        <span onclick="log()">Log</span>
+                        <span class="btn">%</span>
                     </div>
                     <!-- forth row -->
                     <div class="row">
-                        <span class="advanced-calculation buttons">Rad</span>
-                        <span class="advanced-calculation buttons"><i
-                                class="fa-solid fa-square-root-variable"></i></span>
+                        <span onclick="pi()">π</span>
+                        <span onclick="sqrt()">√</span>
                     </div>
                     <!-- fifth row -->
                     <div class="row">
-                        <span class="advanced-calculation buttons number-separators">(</span>
-                        <span class="advanced-calculation buttons number-separators">)</span>
+                        <span class="btn">(</span>
+                        <span class="btn">)</span>
                     </div>
                 </div>
             </div>
