@@ -1,9 +1,19 @@
+/*
+  nameProject: CalculatorApp
+  Developer: Mehdi-Abshari;
+  ProductionDate: 1401-11-29;
+  Plan by: dribbble;
+  Description: ...;
+*/
+
+
 // --> Variables
 // Selecting the textarea for perform calculation
 let screen = document.querySelector("#screen");
 
 // Selecting All button of calculator
 let btn = document.querySelectorAll(".btn");
+
 
 // --> Loops
 // loop for add event to button to check the innerText of buttons
@@ -24,6 +34,7 @@ for (item of btn) {
     screen.value += btnText;
   });
 }
+
 
 // --> Functions
 // function for get sine
